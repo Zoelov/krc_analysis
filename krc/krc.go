@@ -30,7 +30,6 @@ func GetLrcFromKrc(filename string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	// fmt.Println(string(top))
 
 	if string(top) != "krc1" {
 		return "", ErrWrongFmt
